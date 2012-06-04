@@ -16,7 +16,7 @@ function make_keyword_list($emoji_dir, $emoji_url = '', $filename = 'keywords.ph
         $keyword = str_replace('.png', '', basename($filename));
         $keyword = str_replace('plus', '+', $keyword);
         $keyword = ':' . $keyword . ':';
-        $image_tag = "<img src=\"{$emoji_url}{$image}\" />";
+        $image_tag = "<img src=\"{$emoji_url}{$image}\" height=\"20\" weight=\"20\" />";
         $keywords[$keyword] = $image_tag;
     }
 
